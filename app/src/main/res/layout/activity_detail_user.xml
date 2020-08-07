@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_detail_avatar"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginRight="16dp"
+                tools:src="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_detail_avatar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_detail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="nama"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_username"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="username"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <TableRow>
+                <ImageView
+                    android:id="@+id/img_loc"
+                    style="@style/subImg"/>
+                <TextView
+                    android:id="@+id/tv_detail_loc"
+                    style="@style/subDetail"
+                    android:text="location"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <TableRow>
+                <ImageView
+                    android:id="@+id/img_company"
+                    style="@style/subImg"/>
+                <TextView
+                    android:id="@+id/tv_detail_company"
+                    style="@style/subDetail"
+                    android:text="company"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <TableRow>
+                <ImageView
+                    android:id="@+id/img_followers"
+                    style="@style/subImg"/>
+                <TextView
+                    android:id="@+id/tv_detail_followers"
+                    style="@style/subDetail"
+                    android:text="sumFollowers"/>
+                <TextView
+                    android:id="@+id/tv_followers"
+                    style="@style/subDetail"
+                    android:text="followers   •   " />
+
+                <TextView
+                    android:id="@+id/tv_detail_following"
+                    style="@style/subDetail"
+                    android:text="sumFollowing"/>
+                <TextView
+                    android:id="@+id/tv_following"
+                    style="@style/subDetail"
+                    android:text="following"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <TableRow>
+                <ImageView
+                    android:id="@+id/img_star"
+                    style="@style/subImg"/>
+                <TextView
+                    android:id="@+id/tv_detail_repository"
+                    style="@style/subDetail"
+                    android:text="sumrepository"/>
+                <TextView
+                    android:id="@+id/tv_repository"
+                    style="@style/subDetail"
+                    android:text="repository"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
